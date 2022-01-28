@@ -19,6 +19,8 @@ public static void main(String[] args) {
 	WebElement fra = driver.findElement(By.xpath("//frame[@name='login_page']"));
 	driver.switchTo().frame(fra);
 	WebElement custid = driver.findElement(By.xpath("//input[@type='text']"));
-	custid.sendKeys("52159030");
+	custid.sendKeys("98765432");
+	WebElement continu = driver.findElement(By.xpath("//a[@class='btn btn-primary login-btn']"));
+	continu.click();
 }
 }
